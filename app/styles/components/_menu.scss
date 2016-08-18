@@ -1,0 +1,35 @@
+//navigation menu
+.menu-text{
+  color: white;
+
+  align-items: center;
+  //border: 2px solid $light-blue;
+  display: flex;
+  justify-content: center;
+    }
+.main-menu{
+  border: 2px solid red;
+}
+input[type=search]{
+  box-shadow: none;
+  border-radius: 10%;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+// .top-bar{
+//   margin-top: $space-large;
+//   margin-bottom: $space-large;
+//   background: white;
+//   ul{
+//     background: white;
+//   }
+// }
+
+.menu-text{
+  background-color: white;
+  color: $water-blue;
+}
+.off-canvas{
+  max-height: 100%;
+}
