@@ -50,10 +50,10 @@ export default class Sidebar extends React.Component {
       <Home/>
 
       <div className="row">
-        <div className="medium-2 large-2 columns">
+        <div className="large-2 columns">
           <Navigation/>
         </div>
-        <div className="medium-10 large-8 columns">
+        <div className="large-8 columns">
           <h1 className="text-center">Hello World2</h1>
             <p>To get started, click placeholder text and start typing.
               Use your cover letter to show how your talent and experience will solve a problem or drive results for your future employer. For example, if you say you’re collaborative, give an example of how you used your collaboration skills at your last internship, and then show how that experience will benefit the employer.
@@ -92,7 +92,7 @@ export default class Sidebar extends React.Component {
             It’s all about personalization. Write a cover letter that uniquely presents the real you and the future impact only you can make at the company.
           </p>
         </div>
-        <div className="medium-10 large-2 columns">
+        <div className="large-2 columns">
           <h1>helloworld3</h1>
         </div>
       </div>
