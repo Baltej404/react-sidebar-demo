@@ -30,11 +30,15 @@ export default class Sidebar extends React.Component {
   render() {
     return (
       <div>
-            <AppBar
-              title="Title"
-              iconElementLeft={<IconButton onTouchTap={this.handleToggle}><NavigationClose /></IconButton>}>
-              <h1>Hello</h1>
-              </AppBar>
+        <div className="title-bar">
+          <div className="title-bar-left">
+            <IconButton onTouchTap={this.handleToggle}><NavigationClose /></IconButton>
+            <span className="title-bar-title">Foundation</span>
+          </div>
+          <div class="title-bar-right">
+            <button class="menu-icon" type="button" data-open="offCanvasRight"></button>
+          </div>
+        </div>
 
       <Drawer
         docked={false}
