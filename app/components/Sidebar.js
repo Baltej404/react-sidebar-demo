@@ -30,34 +30,30 @@ export default class Sidebar extends React.Component {
   render() {
     return (
       <div>
-        <div className="title-bar">
-          <div className="title-bar-left">
-            <IconButton onTouchTap={this.handleToggle}><NavigationClose /></IconButton>
-            <span className="title-bar-title">Foundation</span>
-          </div>
-          <div class="title-bar-right">
-            <button class="menu-icon" type="button" data-open="offCanvasRight"></button>
-          </div>
-        </div>
+        <AppBar
+          title="Title"
+          iconElementLeft={<IconButton onTouchTap={this.handleToggle}><NavigationClose /></IconButton>}>
+          <h1>Hello</h1>
+        </AppBar>
 
-      <Drawer
-        docked={false}
-        width={200}
-        open={this.state.open}
-        onRequestChange={(open) => this.setState({open})}
-        >
-        <MenuItem  href="https://facebook.github.io/react" onTouchTap={this.handleClose}leftIcon={<HomeIcon/>}>React</MenuItem>
-        <MenuItem  href="https://facebook.github.io/react" onTouchTap={this.handleClose}>Hello World</MenuItem>
-        <Divider />
-        <MenuItem onTouchTap={this.handleClose} leftIcon={<PersonIcon/>}>Log In</MenuItem>
-      </Drawer>
-      <Home/>
+        <Drawer
+          docked={false}
+          width={200}
+          open={this.state.open}
+          onRequestChange={(open) => this.setState({open})}
+          >
+          <MenuItem  href="https://facebook.github.io/react" onTouchTap={this.handleClose}leftIcon={<HomeIcon/>}>React</MenuItem>
+          <MenuItem  href="https://facebook.github.io/react" onTouchTap={this.handleClose}>Hello World</MenuItem>
+          <Divider />
+          <MenuItem onTouchTap={this.handleClose} leftIcon={<PersonIcon/>}>Log In</MenuItem>
+        </Drawer>
+        <Home/>
 
       <div className="row">
-        <div className="medium-2 large-2 columns">
+        <div className="small-12 medium-2 large-2 columns">
           <Navigation/>
         </div>
-        <div className="medium-10 large-8 columns">
+        <div className="small-12 medium-10 large-8 columns">
           <h1 className="text-center">Hello World2</h1>
             <p>To get started, click placeholder text and start typing.
               Use your cover letter to show how your talent and experience will solve a problem or drive results for your future employer. For example, if you say you’re collaborative, give an example of how you used your collaboration skills at your last internship, and then show how that experience will benefit the employer.
@@ -96,11 +92,11 @@ export default class Sidebar extends React.Component {
             It’s all about personalization. Write a cover letter that uniquely presents the real you and the future impact only you can make at the company.
           </p>
         </div>
-        <div className="medium-10 large-2 columns">
+        <div className="small-12 medium-10 large-2 columns">
           <h1>helloworld3</h1>
         </div>
       </div>
-      </div>
+    </div>
     );
   }
 }
